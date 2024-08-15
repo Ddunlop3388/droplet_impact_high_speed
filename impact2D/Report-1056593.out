@@ -1,0 +1,149 @@
+---------------------------------------
+Begin Slurm Prolog: Aug-15-2024 13:14:19
+Job ID:    1056593
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  DropletImpactExample
+Partition: cpu-small
+QOS:       embers
+---------------------------------------
+ast/interpreter/overload.h:535: error: the dimensional constraints below are not compatible
+ast/interpreter/overload.h:535: 't == DT'
+	└─ [/src/run.h:16: 't = 0.'] = [0,1]
+ast/interpreter/overload.h:545: 'e->t == t'
+	└─ [/src/run.h:16: 't = 0.'] = [0]
+Re: 123, We:2
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+Re: 123, We:2
+
+# Quadtree, 591 steps, 123.24 CPU, 139 real, 1.34e+04 points.step/s, 25 var
+---------------------------------------
+Begin Slurm Epilog: Aug-15-2024 13:16:45
+Job ID:        1056593
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      DropletImpactExample
+Resources:     cpu=4,mem=8G,node=1
+Rsrc Used:     cput=00:09:48,vmem=164820K,walltime=00:02:27,mem=127952K,energy_used=0
+Partition:     cpu-small
+QOS:           embers
+Nodes:         atl1-1-02-017-35-1
+---------------------------------------

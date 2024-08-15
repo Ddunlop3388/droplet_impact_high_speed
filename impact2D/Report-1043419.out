@@ -1,0 +1,29 @@
+---------------------------------------
+Begin Slurm Prolog: Aug-15-2024 02:18:20
+Job ID:    1043419
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  DropletImpactExample
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+ast/interpreter/overload.h:535: error: the dimensional constraints below are not compatible
+ast/interpreter/overload.h:535: 't == DT'
+	└─ [/src/run.h:16: 't = 0.'] = [0,1]
+ast/interpreter/overload.h:545: 'e->t == t'
+	└─ [/src/run.h:16: 't = 0.'] = [0]
+20
+slurmstepd: error: *** JOB 1043419 ON atl1-1-02-017-36-2 CANCELLED AT 2024-08-15T02:18:28 ***
+---------------------------------------
+Begin Slurm Epilog: Aug-15-2024 02:18:29
+Job ID:        1043419
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      DropletImpactExample
+Resources:     cpu=4,mem=8G,node=1
+Rsrc Used:     cput=00:00:32,vmem=129300K,walltime=00:00:08,mem=128012K,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-02-017-36-2
+---------------------------------------
