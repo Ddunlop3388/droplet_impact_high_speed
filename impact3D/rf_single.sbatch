@@ -14,6 +14,4 @@ cd $SLURM_SUBMIT_DIR
 /storage/home/hcoda1/8/wdunlop3/basilisk/src/qcc -Wall -O2 -grid=octree droplet_impact.c -o droplet_impact -L/storage/home/hcoda1/8/wdunlop3/basilisk/src/gl -lglutils -lfb_tiny -lm
 
 
-./droplet_impact 1e-3 0.5
-
-
+./droplet_impact 1e-3 0.5 8

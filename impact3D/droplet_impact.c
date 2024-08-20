@@ -42,6 +42,9 @@ u.r[bottom] = dirichlet(0.);
 u.n[bottom] = dirichlet(0.);
 f[bottom] = 0;
 
+// create a name for the big folder holding all simulation results
+char save_location_name[30];
+
 // Create a name for the directory to save the image files
 char path_str[20];
 
@@ -50,7 +53,7 @@ char logfile[30];
 FILE *logfptr;
 
 // define a name for the output directory which will be created
-char dirname[30];
+char dirname[50];
 
 int main(int argc, char *argv[]){
     init_grid(64);
@@ -58,6 +61,7 @@ int main(int argc, char *argv[]){
     // take drop dia and u0 from command line arguments
     drop_dia = atof(argv[1]);
     u0 = atof(argv[2]);
+    sprintf(save_location_name, "refinement_level%d", atoi(argv[3]));
 
     // define the box_length and start_height based on droplet diameter
     box_length = 20*drop_dia;
@@ -78,8 +82,12 @@ int main(int argc, char *argv[]){
     mu1 = 0.89e-3; // Pa*s
     mu2 = 1.8e-5; // Pa*s
 
+    // create the save location name for the big folder for all simulatinos
+    //sprintf(save_location_name, "refinement_level%d", MAXLEVEL);
+    //mkdir(save_location_name, 0755);
+
     // create a folder for saving the outputs
-    sprintf(dirname, "v=%g__D=%g", u0, drop_dia);
+    sprintf(dirname, "%s/v=%g__D=%g", save_location_name, u0, drop_dia);
     mkdir(dirname, 0755);
 
     // Create the filename and create the file for logging the simulation progress
@@ -166,7 +174,6 @@ event movie(i+=5){
 
     char img_index[MAX_DIGITS] = "00000000";
 
-    char filename[50];
     if(i != 0){
 
         int num_digits = floor(log10(i)) + 1;
@@ -180,7 +187,7 @@ event movie(i+=5){
         }
     }
     //sprintf(filename, "output_vids/Re=%d_We=%d.mp4", (int) round(Re), (int) round(We));
-    char png_save_path[50];
+    char png_save_path[100];
     sprintf(png_save_path, "%s/%s_t=%g.png", dirname, img_index, t);
     save(png_save_path);
 }

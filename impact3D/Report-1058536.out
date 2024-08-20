@@ -1,0 +1,314 @@
+---------------------------------------
+Begin Slurm Prolog: Aug-15-2024 14:44:25
+Job ID:    1058536
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  DropletImpactExample
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+droplet_impact.c: In function 'movie':
+droplet_impact.c:177:10: warning: unused variable 'filename' [-Wunused-variable]
+droplet_impact.c:192:28: warning: '_t=' directive writing 3 bytes into a region of size between 0 and 49 [-Wformat-overflow=]
+droplet_impact.c:192:28: note: assuming directive output of 12 bytes
+droplet_impact.c:192:5: note: 'sprintf' output 10 or more bytes (assuming 70) into a destination of size 50
+droplet_impact.c: In function 'main':
+droplet_impact.c:90:22: warning: '%g' directive writing between 1 and 13 bytes into a region of size between 1 and 42 [-Wformat-overflow=]
+droplet_impact.c:90:22: note: assuming directive output of 12 bytes
+droplet_impact.c:90:5: note: 'sprintf' output between 10 and 63 bytes into a destination of size 50
+droplet_impact.c:94:22: warning: '%s' directive writing up to 49 bytes into a region of size 30 [-Wformat-overflow=]
+droplet_impact.c:94:5: note: 'sprintf' output between 9 and 58 bytes into a destination of size 30
+ast/interpreter/overload.h:535: error: the dimensional constraints below are not compatible
+ast/interpreter/overload.h:535: 't == DT'
+	└─ [/src/run.h:16: 't = 0.'] = [0,1]
+ast/interpreter/overload.h:545: 'e->t == t'
+	└─ [/src/run.h:16: 't = 0.'] = [0]
+20
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 15988 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+1e-06
+1e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 15990 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+2e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 15992 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+3e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 15994 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+4e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 15997 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+5e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 15999 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+6e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16001 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+7e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16004 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+8e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16006 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+9e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16008 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+0.0001
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16010 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+40
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16013 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+1e-06
+1e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16015 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+2e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16017 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+3e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16019 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+4e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16022 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+5e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16024 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+6e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16026 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+7e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16029 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+8e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16031 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+9e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16033 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+0.0001
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16035 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+60
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16038 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+1e-06
+1e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16040 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+2e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16042 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+3e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16045 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+4e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16047 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+5e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16049 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+6e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16051 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+7e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16054 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+8e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16056 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+9e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16058 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+0.0001
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16060 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+80
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16063 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+1e-06
+1e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16065 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+2e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16068 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+3e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16071 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+4e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16073 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+5e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16075 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+6e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16077 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+7e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16080 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+8e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16082 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+9e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16084 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+0.0001
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16086 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+100
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16089 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+1e-06
+1e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16091 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+2e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16093 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+3e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16096 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+4e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16098 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+5e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16100 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+6e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16102 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+7e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16105 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+8e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16107 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+9e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16109 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+0.0001
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16112 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+120
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16114 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+1e-06
+1e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16116 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+2e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16118 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+3e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16121 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+4e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16135 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+5e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16137 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+6e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16139 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+7e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16142 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+8e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16144 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+9e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16146 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+0.0001
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16149 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+140
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16151 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+1e-06
+1e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16153 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+2e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16155 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+3e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16158 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+4e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16160 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+5e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16162 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+6e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16164 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+7e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16167 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+8e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16169 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+9e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16171 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+0.0001
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16174 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+160
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16176 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+1e-06
+1e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16178 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+2e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16180 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+3e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16183 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+4e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16185 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+5e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16187 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+6e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16190 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+7e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16192 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+8e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16194 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+9e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16196 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+0.0001
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16199 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+180
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16201 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+1e-06
+1e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16203 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+2e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16205 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+3e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16208 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+4e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16210 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+5e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16212 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+6e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16215 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+7e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16217 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+8e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16219 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+9e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16221 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+0.0001
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16224 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+200
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16226 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+1e-06
+1e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16228 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+2e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16231 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+3e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16233 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+4e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16243 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+5e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16245 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+6e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16248 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+7e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16250 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+8e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16252 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+9e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16254 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+0.0001
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16257 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+220
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16259 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+1e-06
+1e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16261 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+2e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16264 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+3e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16266 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+4e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16268 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+5e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16270 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+6e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16273 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+7e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16275 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+8e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16277 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+9e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16280 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+0.0001
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16283 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+240
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16285 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+1e-06
+1e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16287 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+2e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16290 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+3e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16292 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+4e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16294 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+5e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16296 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+6e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16299 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+7e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16301 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+8e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16303 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+9e-05
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16313 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+0.0001
+/var/lib/slurm/slurmd/job1058536/slurm_script: line 39: 16315 Segmentation fault      ./droplet_impact $drop_dia $u0 $refinement_level
+---------------------------------------
+Begin Slurm Epilog: Aug-15-2024 14:45:33
+Job ID:        1058536
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      DropletImpactExample
+Resources:     cpu=4,mem=8G,node=1
+Rsrc Used:     cput=00:04:32,vmem=88748K,walltime=00:01:08,mem=66224K,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-02-017-30-2
+---------------------------------------

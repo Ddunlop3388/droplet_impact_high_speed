@@ -1,0 +1,685 @@
+---------------------------------------
+Begin Slurm Prolog: Aug-15-2024 14:50:33
+Job ID:    1058846
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  DropletImpactExample
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+droplet_impact.c: In function 'movie':
+droplet_impact.c:177:10: warning: unused variable 'filename' [-Wunused-variable]
+droplet_impact.c:192:28: warning: '_t=' directive writing 3 bytes into a region of size between 0 and 49 [-Wformat-overflow=]
+droplet_impact.c:192:28: note: assuming directive output of 12 bytes
+droplet_impact.c:192:5: note: 'sprintf' output 10 or more bytes (assuming 70) into a destination of size 50
+droplet_impact.c: In function 'main':
+droplet_impact.c:90:22: warning: '%g' directive writing between 1 and 13 bytes into a region of size between 1 and 42 [-Wformat-overflow=]
+droplet_impact.c:90:22: note: assuming directive output of 12 bytes
+droplet_impact.c:90:5: note: 'sprintf' output between 10 and 63 bytes into a destination of size 50
+droplet_impact.c:94:22: warning: '%s' directive writing up to 49 bytes into a region of size 30 [-Wformat-overflow=]
+droplet_impact.c:94:5: note: 'sprintf' output between 9 and 58 bytes into a destination of size 30
+ast/interpreter/overload.h:535: error: the dimensional constraints below are not compatible
+ast/interpreter/overload.h:535: 't == DT'
+	└─ [/src/run.h:16: 't = 0.'] = [0,1]
+ast/interpreter/overload.h:545: 'e->t == t'
+	└─ [/src/run.h:16: 't = 0.'] = [0]
+20
+Re: 22, We:5
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+Re: 22, We:5
+
+# Octree, 332 steps, 30695.7 CPU, 3.078e+04 real, 1.48e+04 points.step/s, 38 var
+1e-06
+1e-05
+Re: 224, We:55
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+Re: 224, We:55
+3
+
+# Octree, 195 steps, 4433.37 CPU, 4458 real, 2.21e+04 points.step/s, 38 var
+2e-05
+Re: 448, We:110
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+Re: 448, We:110
+
+# Octree, 224 steps, 3754.98 CPU, 3770 real, 2.79e+04 points.step/s, 38 var
+3e-05
+Re: 672, We:164
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+Re: 672, We:164
+
+# Octree, 222 steps, 3183.57 CPU, 3197 real, 2.88e+04 points.step/s, 38 var
+4e-05
+Re: 896, We:219
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+Re: 896, We:219
+
+# Octree, 224 steps, 2957.51 CPU, 2970 real, 2.94e+04 points.step/s, 38 var
+5e-05
+Re: 1120, We:274
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+Re: 1120, We:274
+
+# Octree, 224 steps, 2743.87 CPU, 2755 real, 2.98e+04 points.step/s, 38 var
+6e-05
+Re: 1344, We:329
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+Re: 1344, We:329
+
+# Octree, 222 steps, 2556.57 CPU, 2570 real, 3.02e+04 points.step/s, 38 var
+7e-05
+Re: 1568, We:383
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+Re: 1568, We:383
+
+# Octree, 223 steps, 2429.57 CPU, 2442 real, 3.1e+04 points.step/s, 38 var
+8e-05
+Re: 1792, We:438
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+Re: 1792, We:438
+
+# Octree, 223 steps, 2381.55 CPU, 2400 real, 3.08e+04 points.step/s, 38 var
+9e-05
+Re: 2016, We:493
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+Re: 2016, We:493
+
+# Octree, 218 steps, 2251.97 CPU, 2263 real, 3.08e+04 points.step/s, 38 var
+0.0001
+Re: 2240, We:548
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+Re: 2240, We:548
+
+# Octree, 217 steps, 2174.11 CPU, 2185 real, 3.11e+04 points.step/s, 38 var
+40
+Re: 45, We:22
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+Re: 45, We:22
+
+# Octree, 186 steps, 19210.2 CPU, 1.926e+04 real, 1.68e+04 points.step/s, 38 var
+1e-06
+1e-05
+Re: 448, We:219
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+Re: 448, We:219
+
+# Octree, 214 steps, 7171.24 CPU, 7195 real, 2.7e+04 points.step/s, 38 var
+2e-05
+slurmstepd: error: *** JOB 1058846 ON atl1-1-02-017-31-2 CANCELLED AT 2024-08-16T14:50:44 DUE TO TIME LIMIT ***
+---------------------------------------
+Begin Slurm Epilog: Aug-16-2024 14:50:45
+Job ID:        1058846
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      DropletImpactExample
+Resources:     cpu=4,mem=8G,node=1
+Rsrc Used:     cput=4-00:00:40,vmem=3372812K,walltime=1-00:00:10,mem=3321304K,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-02-017-31-2
+---------------------------------------

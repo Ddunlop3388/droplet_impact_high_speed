@@ -11,9 +11,10 @@
 #SBATCH --mail-user=wdunlop3@gatech.edu
 cd $SLURM_SUBMIT_DIR
 
-/storage/home/hcoda1/8/wdunlop3/basilisk/src/qcc droplet_impact.c -o droplet_impact -L/storage/home/hcoda1/8/wdunlop3/basilisk/src/gl -lglutils -lfb_tiny -lm 
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/qcc -O2 -Wall -grid=octree droplet_impact.c -o droplet_impact -L/storage/home/hcoda1/8/wdunlop3/basilisk/src/gl -lglutils -lfb_tiny -lm 
 
-u0=20
+u0=60
+refinement_level=8
 
 while [ $u0 -le 250 ]
 do
@@ -22,7 +23,7 @@ do
         dia_number=1
 
         drop_dia=$(awk "BEGIN {print $dia_number * 10^-6}")
-        ./droplet_impact $drop_dia $u0
+        ./droplet_impact $drop_dia $u0 $refinement_level
         echo $drop_dia
         dia_number=10
 
@@ -31,10 +32,9 @@ do
                 drop_dia=$(awk "BEGIN {print $dia_number * 10^-6}")
 
                 echo $drop_dia
-                ./droplet_impact $drop_dia $u0
+                ./droplet_impact $drop_dia $u0 $refinement_level
                 dia_number=$((dia_number+10))
         done
         u0=$((u0+20))
 done
 
-./droplet_impact 1e-4 1.0
