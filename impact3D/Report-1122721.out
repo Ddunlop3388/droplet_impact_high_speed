@@ -1,0 +1,23 @@
+---------------------------------------
+Begin Slurm Prolog: Aug-23-2024 08:11:40
+Job ID:    1122721
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  DropletImpactExample3D
+Partition: cpu-small
+QOS:       embers
+---------------------------------------
+slurmstepd: error: *** JOB 1122721 ON atl1-1-02-014-22-2 CANCELLED AT 2024-08-23T08:11:45 ***
+---------------------------------------
+Begin Slurm Epilog: Aug-23-2024 08:11:47
+Job ID:        1122721
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      DropletImpactExample3D
+Resources:     cpu=4,mem=8G,node=1
+Rsrc Used:     cput=00:00:24,vmem=319772K,walltime=00:00:06,mem=305472K,energy_used=0
+Partition:     cpu-small
+QOS:           embers
+Nodes:         atl1-1-02-014-22-2
+---------------------------------------

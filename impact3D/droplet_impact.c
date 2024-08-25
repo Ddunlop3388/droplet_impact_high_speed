@@ -64,7 +64,7 @@ int main(int argc, char *argv[]){
     sprintf(save_location_name, "refinement_level%d", atoi(argv[3]));
 
     // define the box_length and start_height based on droplet diameter
-    box_length = 20*drop_dia;
+    box_length =20*drop_dia;
     start_height = 5*drop_dia;
 
     origin(-box_length/2, 0, -box_length/2);
@@ -165,7 +165,7 @@ event initial_graphics_display(i=0){
 #endif
 
 event movie(i+=5){
-    view(tx=0, ty=-0.5, width=800, height=800);
+    view(tx=0, ty=-0.5, width=1200, height=1200, camera="front");
 
     clear();
     draw_vof("f");
