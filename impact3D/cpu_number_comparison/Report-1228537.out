@@ -1,0 +1,51 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-04-2024 18:02:28
+Job ID:    1228537
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  DropletImpactExample3D
+Partition: cpu-small
+QOS:       embers
+---------------------------------------
+ast/interpreter/overload.h:535: error: the dimensional constraints below are not compatible
+ast/interpreter/overload.h:535: 't == DT'
+	└─ [/src/run.h:16: 't = 0.'] = [0,1]
+/src/navier-stokes/centered.h:180: 'u.x[] == Delta/t'
+	└─ [/src/run.h:16: 't = 0.'] = [0]
+Re: 2554, We:31
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+Re: 2554, We:31
+3
+
+# Octree, 100 steps, 133.67 CPU, 145.1 real, 4e+04 points.step/s, 38 var
+---------------------------------------
+Begin Slurm Epilog: Sep-04-2024 18:05:13
+Job ID:        1228537
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      DropletImpactExample3D
+Resources:     cpu=12,mem=84G,node=1
+Rsrc Used:     cput=00:33:12,vmem=483.50M,walltime=00:02:46,mem=494028K,energy_used=0
+Partition:     cpu-small
+QOS:           embers
+Nodes:         atl1-1-02-009-25-2
+---------------------------------------

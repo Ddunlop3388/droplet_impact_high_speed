@@ -5,7 +5,6 @@
 #include "navier-stokes/centered.h"
 #include "two-phase.h"
 #include "tension.h"
-#include "tag.h"
 #include "view.h"
 
 // define constants
@@ -25,7 +24,7 @@ double We;
 scalar f0[];
 
 // define max refinement level for grid
-int MAXLEVEL = 8;
+int MAXLEVEL;
 
 // define error tolerance
 double uemax = 0.1;
@@ -49,11 +48,11 @@ char save_location_name[30];
 char path_str[20];
 
 // define a name for the logfile and a pointer to the logfile
-char logfile[30];
+char logfile[120];
 FILE *logfptr;
 
 // define a name for the output directory which will be created
-char dirname[50];
+char dirname[110];
 
 int main(int argc, char *argv[]){
     init_grid(64);
@@ -63,14 +62,15 @@ int main(int argc, char *argv[]){
     u0 = atof(argv[2]);
     sprintf(save_location_name, "refinement_level%d", atoi(argv[3]));
 
+    MAXLEVEL = atoi(argv[3]);
     // define the box_length and start_height based on droplet diameter
-    box_length =20*drop_dia;
-    start_height = 5*drop_dia;
+    box_length = 10.0*drop_dia;
+    start_height = 2.0 * drop_dia;
 
     origin(-box_length/2, 0, -box_length/2);
 
     // define the end time of the simulation
-    t_end = 1.3 * start_height / u0;
+    t_end = 5.0*start_height / u0;
 
     size(box_length);
 
@@ -165,7 +165,7 @@ event initial_graphics_display(i=0){
 #endif
 
 event movie(i+=5){
-    view(tx=0, ty=-0.5, width=1200, height=1200, camera="front");
+    view(tx=0, ty=-0.5, width=1100, height=1100, camera="front");
 
     clear();
     draw_vof("f");
@@ -187,11 +187,13 @@ event movie(i+=5){
         }
     }
     //sprintf(filename, "output_vids/Re=%d_We=%d.mp4", (int) round(Re), (int) round(We));
-    char png_save_path[100];
+    char png_save_path[140];
     sprintf(png_save_path, "%s/%s_t=%g.png", dirname, img_index, t);
     save(png_save_path);
 }
 
 event adapt(i++){
     adapt_wavelet({f, p, u}, (double[]){0.01,0.01,0.01,0.01,0.01}, maxlevel=MAXLEVEL);
+
+    boundary(all);
 }

@@ -1,0 +1,28 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-04-2024 14:10:44
+Job ID:    1223508
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  DropletImpactExample3D
+Partition: cpu-small
+QOS:       embers
+---------------------------------------
+ast/interpreter/overload.h:535: error: the dimensional constraints below are not compatible
+ast/interpreter/overload.h:535: 't == DT'
+	└─ [/src/run.h:16: 't = 0.'] = [0,1]
+ast/interpreter/overload.h:545: 'e->t == t'
+	└─ [/src/run.h:16: 't = 0.'] = [0]
+slurmstepd: error: *** JOB 1223508 ON atl1-1-02-009-26-1 CANCELLED AT 2024-09-04T17:04:57 DUE TO PREEMPTION ***
+---------------------------------------
+Begin Slurm Epilog: Sep-04-2024 17:04:58
+Job ID:        1223508
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      DropletImpactExample3D
+Resources:     cpu=4,mem=8G,node=1
+Rsrc Used:     cput=11:37:08,vmem=928940K,walltime=02:54:17,mem=897660K,energy_used=0
+Partition:     cpu-small
+QOS:           embers
+Nodes:         atl1-1-02-009-26-1
+---------------------------------------

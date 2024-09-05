@@ -1,0 +1,28 @@
+---------------------------------------
+Begin Slurm Prolog: Aug-15-2024 14:32:12
+Job ID:    1058278
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  DropletImpactExample
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+ast/init_solver.h: In function '_init_solver':
+ast/init_solver.h:23:688: error: 'vector' has no member named 'z'
+ast/init_solver.h:23:714: error: 'vector' has no member named 'z'
+ast/init_solver.h:23:760: error: 'vector' has no member named 'z'
+20
+slurmstepd: error: *** JOB 1058278 ON atl1-1-02-019-23-1 CANCELLED AT 2024-08-15T14:37:01 ***
+---------------------------------------
+Begin Slurm Epilog: Aug-15-2024 14:37:03
+Job ID:        1058278
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      DropletImpactExample
+Resources:     cpu=4,mem=8G,node=1
+Rsrc Used:     cput=00:19:20,vmem=2596008K,walltime=00:04:50,mem=2582996K,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-02-019-23-1
+---------------------------------------

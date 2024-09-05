@@ -1,0 +1,23 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-04-2024 18:01:55
+Job ID:    1228813
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  DropImpact
+Partition: cpu-small
+QOS:       embers
+---------------------------------------
+slurmstepd: error: *** JOB 1228813 ON atl1-1-02-009-28-2 CANCELLED AT 2024-09-04T18:01:57 ***
+---------------------------------------
+Begin Slurm Epilog: Sep-04-2024 18:02:01
+Job ID:        1228813
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      DropImpact
+Resources:     cpu=8,mem=56G,node=1
+Rsrc Used:     cput=00:00:24,vmem=3564K,walltime=00:00:03,mem=776K,energy_used=0
+Partition:     cpu-small
+QOS:           embers
+Nodes:         atl1-1-02-009-28-2
+---------------------------------------

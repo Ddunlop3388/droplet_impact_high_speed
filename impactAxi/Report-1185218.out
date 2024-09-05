@@ -1,0 +1,34 @@
+---------------------------------------
+Begin Slurm Prolog: Aug-29-2024 08:28:16
+Job ID:    1185218
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  DropletImpactExample3D
+Partition: cpu-small
+QOS:       embers
+---------------------------------------
+qcc: error: cannot parse input (missing closing braces?)
+rm: cannot remove ‘.qccbl2OZM’: Directory not empty
+Re: 2554, We:31
+1
+2
+2
+2
+2
+2
+Re: 2554, We:31
+
+# Octree, 33 steps, 31 CPU, 32.34 real, 1.52e+04 points.step/s, 38 var
+---------------------------------------
+Begin Slurm Epilog: Aug-29-2024 08:28:52
+Job ID:        1185218
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      DropletImpactExample3D
+Resources:     cpu=4,mem=8G,node=1
+Rsrc Used:     cput=00:02:24,vmem=527208K,walltime=00:00:36,mem=508492K,energy_used=0
+Partition:     cpu-small
+QOS:           embers
+Nodes:         atl1-1-02-015-16-1
+---------------------------------------

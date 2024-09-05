@@ -1,0 +1,83 @@
+---------------------------------------
+Begin Slurm Prolog: Aug-23-2024 08:12:43
+Job ID:    1122723
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  DropletImpactExample3D
+Partition: cpu-small
+QOS:       embers
+---------------------------------------
+droplet_impact.c: In function 'main':
+droplet_impact.c:90:22: warning: '%g' directive writing between 1 and 13 bytes into a region of size between 1 and 42 [-Wformat-overflow=]
+droplet_impact.c:90:22: note: assuming directive output of 12 bytes
+droplet_impact.c:90:5: note: 'sprintf' output between 10 and 63 bytes into a destination of size 50
+droplet_impact.c:94:22: warning: '%s' directive writing up to 49 bytes into a region of size 30 [-Wformat-overflow=]
+droplet_impact.c:94:5: note: 'sprintf' output between 9 and 58 bytes into a destination of size 30
+ast/interpreter/overload.h:535: error: the dimensional constraints below are not compatible
+ast/interpreter/overload.h:535: 't == DT'
+	└─ [/src/run.h:16: 't = 0.'] = [0,1]
+ast/interpreter/overload.h:545: 'e->t == t'
+	└─ [/src/run.h:16: 't = 0.'] = [0]
+Re: 2498, We:31
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+Re: 2498, We:31
+
+# Octree, 231 steps, 179.71 CPU, 182.8 real, 3.4e+04 points.step/s, 38 var
+---------------------------------------
+Begin Slurm Epilog: Aug-23-2024 08:16:07
+Job ID:        1122723
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      DropletImpactExample3D
+Resources:     cpu=4,mem=8G,node=1
+Rsrc Used:     cput=00:13:36,vmem=375116K,walltime=00:03:24,mem=365904K,energy_used=0
+Partition:     cpu-small
+QOS:           embers
+Nodes:         atl1-1-02-014-22-2
+---------------------------------------

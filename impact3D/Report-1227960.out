@@ -1,0 +1,28 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-04-2024 16:49:25
+Job ID:    1227960
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  CompareRefinementLevelsfor3DImpact
+Partition: cpu-small
+QOS:       embers
+---------------------------------------
+ast/interpreter/overload.h:535: error: the dimensional constraints below are not compatible
+ast/interpreter/overload.h:535: 't == DT'
+	└─ [/src/run.h:16: 't = 0.'] = [0,1]
+ast/interpreter/overload.h:545: 'e->t == t'
+	└─ [/src/run.h:16: 't = 0.'] = [0]
+slurmstepd: error: *** JOB 1227960 ON atl1-1-02-020-1-2 CANCELLED AT 2024-09-04T16:53:42 ***
+---------------------------------------
+Begin Slurm Epilog: Sep-04-2024 16:53:43
+Job ID:        1227960
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      CompareRefinementLevelsfor3DImpact
+Resources:     cpu=12,mem=24G,node=3
+Rsrc Used:     cput=00:51:36,vmem=509184K,walltime=00:04:18,mem=483176K,energy_used=0
+Partition:     cpu-small
+QOS:           embers
+Nodes:         atl1-1-02-020-1-2,atl1-1-02-020-2-[1-2]
+---------------------------------------
