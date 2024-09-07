@@ -1,12 +1,8 @@
 #!/bin/bash
 
-#diameter=2.28e-3
-#vel=1.0
-#refinement_level=10
-
-#SBATCH -J DropImpact
+#SBATCH -JBurzynskiValidation
 #SBATCH --account=gts-ssuresh313
-#SBATCH -N1 --ntasks-per-node=8
+#SBATCH -N1 --ntasks-per-node=1
 #SBATCH --mem-per-cpu=7G
 #SBATCH -t360
 #SBATCH -qembers
@@ -15,7 +11,11 @@
 #SBATCH --mail-user=wdunlop3@gatech.edu
 cd $SLURM_SUBMIT_DIR
 
-/storage/home/hcoda1/8/wdunlop3/basilisk/src/qcc -Wall -O2 -grid=octree droplet_impact.c -o droplet_impact -L/storage/home/hcoda1/8/wdunlop3/basilisk/src/gl -lglutils -lfb_tiny -lm
+uptime_seconds=$(cat /proc/uptime | awk '{print int($1)}')
+
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/qcc -Wall -O2 -grid=octree droplet_impact.c -o droplet_impact_${uptime_seconds} -L/storage/home/hcoda1/8/wdunlop3/basilisk/src/gl -lglutils -lfb_tiny -lm
 
 
-./droplet_impact 2.28e-3 1.0 9
+./droplet_impact_${uptime_seconds} 3.7e-3 10.0 8
+
+rm droplet_impact_${uptime_seconds}

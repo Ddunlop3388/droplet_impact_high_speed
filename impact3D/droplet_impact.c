@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include "navier-stokes/centered.h"
 #include "two-phase.h"
+#include "contact.h"
 #include "tension.h"
 #include "view.h"
 
@@ -34,6 +35,12 @@ double u0; // m/s
 
 // define end time for the simulation
 double t_end;
+
+// set the equilibrium contact angle
+vector h[];
+double theta0 = 90.;
+h.t[bottom] = contact_angle(theta0 * pi/180.);
+h.r[bottom] = contact_angle(theta0 * pi/180.);
 
 // boundary conditions --> no slip
 u.t[bottom] = dirichlet(0.);
@@ -70,17 +77,17 @@ int main(int argc, char *argv[]){
     origin(-box_length/2, 0, -box_length/2);
 
     // define the end time of the simulation
-    t_end = 5.0*start_height / u0;
+    t_end = 3.5*start_height / u0;
 
     size(box_length);
 
     // define the densities and viscosities of the two fluids
         // fluid 1: Water at room temp
         // fluid 2: Air at room temp
-    rho1 = 997.; // kg/m^3
-    rho2 = 1.293; // kg/m^3
-    mu1 = 0.89e-3; // Pa*s
-    mu2 = 1.8e-5; // Pa*s
+    rho1 = 998.; // kg/m^3
+    rho2 = 1.2; // kg/m^3
+    mu1 = 1.002e-3; // Pa*s
+    mu2 = 1.820e-5; // Pa*s
 
     // create the save location name for the big folder for all simulatinos
     //sprintf(save_location_name, "refinement_level%d", MAXLEVEL);

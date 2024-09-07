@@ -1,0 +1,28 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-05-2024 12:35:32
+Job ID:    1234053
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  DropImpact
+Partition: cpu-small
+QOS:       embers
+---------------------------------------
+ast/interpreter/overload.h:535: error: the dimensional constraints below are not compatible
+ast/interpreter/overload.h:535: 't == DT'
+	└─ [/src/run.h:16: 't = 0.'] = [0,1]
+ast/interpreter/overload.h:545: 'e->t == t'
+	└─ [/src/run.h:16: 't = 0.'] = [0]
+slurmstepd: error: *** JOB 1234053 ON atl1-1-02-020-14-2 CANCELLED AT 2024-09-05T12:41:10 ***
+---------------------------------------
+Begin Slurm Epilog: Sep-05-2024 12:41:12
+Job ID:        1234053
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      DropImpact
+Resources:     cpu=8,mem=56G,node=1
+Rsrc Used:     cput=00:45:04,vmem=503092K,walltime=00:05:38,mem=500900K,energy_used=0
+Partition:     cpu-small
+QOS:           embers
+Nodes:         atl1-1-02-020-14-2
+---------------------------------------

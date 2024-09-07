@@ -1,0 +1,30 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-06-2024 13:24:28
+Job ID:    1243445
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  DropImpact
+Partition: cpu-small
+QOS:       embers
+---------------------------------------
+date: extra operand ‘%Y%m%d_%H%M%S’
+Try 'date --help' for more information.
+ast/interpreter/overload.h:535: error: the dimensional constraints below are not compatible
+ast/interpreter/overload.h:535: 't == DT'
+	└─ [/src/run.h:16: 't = 0.'] = [0,1]
+ast/interpreter/overload.h:545: 'e->t == t'
+	└─ [/src/run.h:16: 't = 0.'] = [0]
+/var/lib/slurm/slurmd/job1243445/slurm_script: line 20: ./droplet_impact: No such file or directory
+---------------------------------------
+Begin Slurm Epilog: Sep-06-2024 13:24:48
+Job ID:        1243445
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      DropImpact
+Resources:     cpu=1,mem=7G,node=1
+Rsrc Used:     cput=00:00:20,vmem=8K,walltime=00:00:20,mem=0,energy_used=0
+Partition:     cpu-small
+QOS:           embers
+Nodes:         atl1-1-02-020-34-2
+---------------------------------------
