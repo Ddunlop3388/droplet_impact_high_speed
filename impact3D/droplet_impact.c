@@ -7,6 +7,7 @@
 #include "contact.h"
 #include "tension.h"
 #include "view.h"
+#include "reduced.h"
 
 // define constants
 #define MAX_DIGITS 8
@@ -63,6 +64,9 @@ char dirname[110];
 
 int main(int argc, char *argv[]){
     init_grid(64);
+    
+    // define the acceleration due to gravity
+    G.y = -9.81;
 
     // take drop dia and u0 from command line arguments
     drop_dia = atof(argv[1]);
@@ -72,7 +76,7 @@ int main(int argc, char *argv[]){
     MAXLEVEL = atoi(argv[3]);
     // define the box_length and start_height based on droplet diameter
     box_length = 10.0*drop_dia;
-    start_height = 2.0 * drop_dia;
+    start_height = 1.0 * drop_dia;
 
     origin(-box_length/2, 0, -box_length/2);
 
@@ -204,3 +208,5 @@ event adapt(i++){
 
     boundary(all);
 }
+
+

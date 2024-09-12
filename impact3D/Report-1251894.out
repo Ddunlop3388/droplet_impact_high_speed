@@ -1,0 +1,28 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-11-2024 14:40:28
+Job ID:    1251894
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  BurzynskiValidation
+Partition: cpu-small
+QOS:       embers
+---------------------------------------
+ast/interpreter/overload.h:535: error: the dimensional constraints below are not compatible
+ast/interpreter/overload.h:535: 't == DT'
+	└─ [/src/run.h:16: 't = 0.'] = [0,1]
+ast/interpreter/overload.h:545: 'e->t == t'
+	└─ [/src/run.h:16: 't = 0.'] = [0]
+slurmstepd: error: *** JOB 1251894 ON atl1-1-02-009-5-1 CANCELLED AT 2024-09-11T16:48:00 DUE TO PREEMPTION ***
+---------------------------------------
+Begin Slurm Epilog: Sep-11-2024 16:48:01
+Job ID:        1251894
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      BurzynskiValidation
+Resources:     cpu=1,mem=7G,node=1
+Rsrc Used:     cput=02:07:40,vmem=599132K,walltime=02:07:40,mem=568944K,energy_used=0
+Partition:     cpu-small
+QOS:           embers
+Nodes:         atl1-1-02-009-5-1
+---------------------------------------
