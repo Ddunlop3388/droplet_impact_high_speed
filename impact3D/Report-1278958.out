@@ -1,0 +1,23 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-13-2024 14:45:16
+Job ID:    1278958
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  BursynskiValidation
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+slurmstepd: error: *** JOB 1278958 ON atl1-1-02-002-9-2 CANCELLED AT 2024-09-13T14:45:24 ***
+---------------------------------------
+Begin Slurm Epilog: Sep-13-2024 14:45:25
+Job ID:        1278958
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      BursynskiValidation
+Resources:     cpu=10,mem=160G,node=1
+Rsrc Used:     cput=00:01:20,vmem=264988K,walltime=00:00:08,mem=257816K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-02-002-9-2
+---------------------------------------

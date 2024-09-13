@@ -1,3 +1,20 @@
+@if _XOPEN_SOURCE < 700
+  @undef _XOPEN_SOURCE
+  @define _XOPEN_SOURCE 700
+@endif
+@if _GNU_SOURCE
+@include <stdint.h>
+@include <string.h>
+@include <fenv.h>
+@endif
+#define _CATCH
+#define dimension 3
+#define BGHOSTS 2
+#include "common.h"
+#include "grid/octree.h"
+#ifndef BASILISK_HEADER_0
+#define BASILISK_HEADER_0
+#line 1 "droplet_impact.c"
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <math.h>
@@ -269,3 +286,5 @@ event update_contact_angle(i++){
     }   
     #endif
 }
+
+#endif
