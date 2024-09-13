@@ -1,0 +1,40 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-12-2024 11:11:20
+Job ID:    1264615
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  BursynskiValidation
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+droplet_impact.c: In function 'update_contact_angle':
+droplet_impact.c:236:9: warning: implicit declaration of function 'MPI_ALLreduce'; did you mean 'MPI_Allreduce'? [-Wimplicit-function-declaration]
+/scratch/1264615/ccFs9IE6.o: In function `update_contact_angle':
+droplet_impact.c:(.text+0x8c9e6): undefined reference to `MPI_ALLreduce'
+droplet_impact.c:(.text+0x8ca0e): undefined reference to `MPI_ALLreduce'
+collect2: error: ld returned 1 exit status
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_102861: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_102861: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_102861: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_102861: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_102861: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_102861: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_102861: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_102861: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_102861: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_102861: No such file or directory
+srun: error: atl1-1-02-004-11-1: tasks 0-9: Exited with exit code 2
+rm: cannot remove ‘droplet_impact_102861’: No such file or directory
+---------------------------------------
+Begin Slurm Epilog: Sep-12-2024 11:11:43
+Job ID:        1264615
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      BursynskiValidation
+Resources:     cpu=10,mem=160G,node=1
+Rsrc Used:     cput=00:04:10,vmem=16K,walltime=00:00:25,mem=0,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-02-004-11-1
+---------------------------------------

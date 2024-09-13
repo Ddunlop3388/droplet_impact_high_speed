@@ -1,0 +1,30 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-12-2024 13:44:14
+Job ID:    1266774
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  BursynskiValidation
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+ast/interpreter/overload.h:535: error: the dimensional constraints below are not compatible
+ast/interpreter/overload.h:535: 't == DT'
+	└─ [/src/run.h:16: 't = 0.'] = [0,1]
+/src/navier-stokes/centered.h:180: 'u.x[] == Delta/t'
+	└─ [/src/run.h:16: 't = 0.'] = [0]
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1266774.0 ON atl1-1-02-003-1-1 CANCELLED AT 2024-09-12T13:44:56 ***
+slurmstepd: error: *** JOB 1266774 ON atl1-1-02-003-1-1 CANCELLED AT 2024-09-12T13:44:56 ***
+---------------------------------------
+Begin Slurm Epilog: Sep-12-2024 13:44:59
+Job ID:        1266774
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      BursynskiValidation
+Resources:     cpu=10,mem=160G,node=1
+Rsrc Used:     cput=00:07:10,vmem=20820K,walltime=00:00:43,mem=6652K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-02-003-1-1
+---------------------------------------

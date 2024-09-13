@@ -1,0 +1,39 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-13-2024 13:30:10
+Job ID:    1278082
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  BursynskiValidation
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+droplet_impact.c: In function 'movie_top':
+droplet_impact.c:210:5: warning: implicit declaration of function 'drawvof'; did you mean 'draw_vof'? [-Wimplicit-function-declaration]
+droplet_impact.c:212:22: warning: initialization of 'char' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+droplet_impact.c:222:22: error: subscripted value is neither array nor pointer nor vector
+droplet_impact.c:226:28: warning: format '%s' expects argument of type 'char *', but argument 4 has type 'int' [-Wformat=]
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_197689: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_197689: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_197689: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_197689: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_197689: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_197689: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_197689: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_197689: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_197689: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_197689: No such file or directory
+srun: error: atl1-1-01-003-30-1: tasks 0-9: Exited with exit code 2
+rm: cannot remove ‘droplet_impact_197689’: No such file or directory
+---------------------------------------
+Begin Slurm Epilog: Sep-13-2024 13:30:14
+Job ID:        1278082
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      BursynskiValidation
+Resources:     cpu=10,mem=160G,node=1
+Rsrc Used:     cput=00:00:40,vmem=36K,walltime=00:00:04,mem=0,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-01-003-30-1
+---------------------------------------
