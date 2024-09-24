@@ -1,0 +1,29 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-23-2024 11:38:18
+Job ID:    1409214
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  BursynskiValidationConservingWithExtendedTime
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+ast/interpreter/overload.h:535: error: the dimensional constraints below are not compatible
+ast/interpreter/overload.h:535: 't == DT'
+	└─ [/src/run.h:16: 't = 0.'] = [0,1]
+ast/interpreter/overload.h:545: 'e->t == t'
+	└─ [/src/run.h:16: 't = 0.'] = [0]
+slurmstepd: error: *** STEP 1409214.0 ON atl1-1-03-004-1-1 CANCELLED AT 2024-09-23T23:38:36 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 1409214 ON atl1-1-03-004-1-1 CANCELLED AT 2024-09-23T23:38:36 DUE TO TIME LIMIT ***
+---------------------------------------
+Begin Slurm Epilog: Sep-23-2024 23:38:38
+Job ID:        1409214
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      BursynskiValidationConservingWithExtendedTime
+Resources:     cpu=10,mem=160G,node=1
+Rsrc Used:     cput=5-00:03:00,vmem=10324K,walltime=12:00:18,mem=6684K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-03-004-1-1
+---------------------------------------

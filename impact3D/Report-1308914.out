@@ -1,0 +1,160 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-16-2024 17:07:32
+Job ID:    1308914
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  BursynskiValidation
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+ast/interpreter/overload.h:535: error: the dimensional constraints below are not compatible
+ast/interpreter/overload.h:535: 't == DT'
+	└─ [/src/run.h:16: 't = 0.'] = [0,1]
+/src/navier-stokes/centered.h:180: 'u.x[] == Delta/t'
+	└─ [/src/run.h:16: 't = 0.'] = [0]
+Re: 2271, We:31
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2271, We:31
+1
+Re: 2271, We:31
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2271, We:31
+1
+Re: 2271, We:31
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2271, We:31
+1
+Re: 2271, We:31
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2271, We:31
+1
+Re: 2271, We:31
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2271, We:31
+1
+Re: 2271, We:31
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2271, We:31
+1
+Re: 2271, We:31
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2271, We:31
+1
+Re: 2271, We:31
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2271, We:31
+1
+Re: 2271, We:31
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2271, We:31
+1
+Re: 2271, We:31
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2271, We:31
+1
+
+# Octree, 10 steps, 61.28 CPU, 63.52 real, 4.27e+04 points.step/s, 41 var
+# 10 procs, MPI: min 9.9 (16%) avg 28 (43%) max 39 (61%)
+---------------------------------------
+Begin Slurm Epilog: Sep-16-2024 17:09:02
+Job ID:        1308914
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      BursynskiValidation
+Resources:     cpu=10,mem=160G,node=1
+Rsrc Used:     cput=00:15:00,vmem=6716K,walltime=00:01:30,mem=6700K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-02-002-9-2
+---------------------------------------

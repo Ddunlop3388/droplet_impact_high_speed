@@ -24,3 +24,19 @@ ast/interpreter/overload.h:535: 't == DT'
 	└─ [/src/run.h:16: 't = 0.'] = [0,1]
 ast/interpreter/overload.h:545: 'e->t == t'
 	└─ [/src/run.h:16: 't = 0.'] = [0]
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 1278951 ON atl1-1-02-003-8-1 CANCELLED AT 2024-09-13T20:45:24 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 1278951.0 ON atl1-1-02-003-8-1 CANCELLED AT 2024-09-13T20:45:24 DUE TO TIME LIMIT ***
+---------------------------------------
+Begin Slurm Epilog: Sep-13-2024 20:45:26
+Job ID:        1278951
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      BursynskiValidation
+Resources:     cpu=10,mem=160G,node=1
+Rsrc Used:     cput=2-12:03:40,vmem=7672K,walltime=06:00:22,mem=6700K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-02-003-8-1
+---------------------------------------

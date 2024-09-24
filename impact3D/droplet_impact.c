@@ -9,6 +9,7 @@
 #include "view.h"
 #include "reduced.h"
 #include "tag.h"
+#include "navier-stokes/conserving.h"
 
 // define constants
 #define MAX_DIGITS 8
@@ -66,7 +67,7 @@ char dirname[110];
 
 int main(int argc, char *argv[]){
     init_grid(64);
-    
+     
     // define the acceleration due to gravity
     G.y = -9.81;
 
@@ -77,13 +78,13 @@ int main(int argc, char *argv[]){
 
     MAXLEVEL = atoi(argv[3]);
     // define the box_length and start_height based on droplet diameter
-    box_length = 10.0*drop_dia;
+    box_length = 6.0*drop_dia;
     start_height = 0.5 * drop_dia;
 
     origin(-box_length/2, 0, -box_length/2);
 
     // define the end time of the simulation
-    t_end = 4.5*start_height / u0;
+    t_end = 10.0*start_height / u0;
 
     size(box_length);
 
@@ -114,8 +115,19 @@ int main(int argc, char *argv[]){
     // Calculate Reynolds number for the impact droplet
     Re = rho1 * u0 * drop_dia / mu1;
     We = rho1 * drop_dia *sq(u0) / f.sigma;
-
+    
     run();
+}
+
+double max_in_array(double arr[], int n){
+    double max = arr[0];
+
+    for(int i=1; i<n; i++){
+        if (arr[i] > max){
+            max = arr[i];
+        }
+    }
+    return max;
 }
 
 event init(t=0){
@@ -143,7 +155,7 @@ event log_status(i++){
     // print out the iteration number and time
     
     t_dl = u0 * t / drop_dia; 
-    char logstr[20];
+    char logstr[50];
     sprintf(logstr, "%d %g %g\n", i, t, t_dl);
 
     logfptr = fopen(logfile, "a");
@@ -180,8 +192,8 @@ event initial_graphics_display(i=0){
 #endif
 
 event movie_front(i+=5){
-    view(tx=0, ty=-0.5, width=1100, height=1100, camera="front");
-
+    view(tx=0, ty=-0.5, width=1100, height=1100, theta=pi);
+  
     clear();
     draw_vof("f");
     //squares("u.y", linear=true, spread=10);
@@ -201,7 +213,7 @@ event movie_front(i+=5){
         }
     }
     //sprintf(filename, "output_vids/Re=%d_We=%d.mp4", (int) round(Re), (int) round(We));
-    char png_save_path[140];
+    char png_save_path[170];
     sprintf(png_save_path, "%s/%s_t=%g_tau=%g_front.png", dirname, img_index, t, t_dl);
     save(png_save_path);
 }
@@ -225,7 +237,7 @@ event movie_top(i+=5){
             img_index[start_ind + j] = num_as_str[j];
         }
     }
-    char png_save_path[140];
+    char png_save_path[170];
     sprintf(png_save_path, "%s/%s_t=%g_tau=%g_top.png", dirname, img_index, t, t_dl);
     save(png_save_path);
 }
@@ -242,7 +254,7 @@ event update_contact_angle(i++){
         m[] = f[] > 1e-3;
     int num_droplets = tag(m);
     
-    printf("%d\n", num_droplets); 
+    //printf("%d\n", num_droplets); 
     double v[num_droplets];
     coord b[num_droplets];
 
@@ -259,13 +271,16 @@ event update_contact_angle(i++){
                 b[j].x += dv() * f[] * p.x;
         }
     }
+    
+    printf("%g\n", max_in_array(v, num_droplets));
     #if _MPI
         MPI_Allreduce(MPI_IN_PLACE, v, num_droplets, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
         MPI_Allreduce(MPI_IN_PLACE, b, 3*num_droplets, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
     #endif
-    #if 0 
+    #if 0
     for (int j=0; j < num_droplets; j++){
         fprintf(fout, "%d %g %d %g %g %g %g\n", i, t, j, v[j], b[j].x/v[j], b[j].y/v[j], b[j].z/v[j]);
     }   
     #endif
 }
+

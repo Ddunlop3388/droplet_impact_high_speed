@@ -1,0 +1,56 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-13-2024 15:42:49
+Job ID:    1279655
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  BursynskiValidation
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+droplet_impact.c:268: warning: Basilisk C parse error near `(!(f[] == 0)) & (!(f[] == 1)){
+            printf("%g %g %g \n", x, y, z'
+droplet_impact.c: In function 'update_contact_angle':
+droplet_impact.c:267:18: error: expected expression before ']' token
+droplet_impact.c:267:34: error: expected expression before ']' token
+droplet_impact.c:267:42: error: expected ')' before '{' token
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/grid/stencils.h:69:1: error: expected expression before '}' token
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/grid/stencils.h:69:1: note: in definition of macro 'end_foreach_stencil'
+droplet_impact.c:267:18: error: expected expression before ']' token
+droplet_impact.c:267:34: error: expected expression before ']' token
+droplet_impact.c:267:42: error: expected ')' before '{' token
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/grid/tree.h:443:29: error: expected expression before '}' token
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/grid/tree.h:693:23: note: in expansion of macro 'end_foreach_cache'
+droplet_impact.c:269:10: note: in expansion of macro 'end_foreach'
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/grid/stencils.h:53:15: warning: unused variable '_loop' [-Wunused-variable]
+droplet_impact.c:266:5: note: in expansion of macro 'foreach_stencil'
+ast/init_solver.h:3:1: warning: ISO C forbids nested functions [-Wpedantic]
+ast/init_solver.h:3:13: error: invalid storage class for function '_init_solver'
+ast/init_solver.h:32:1: error: expected declaration or statement at end of input
+ast/init_solver.h: At top level:
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/common.h:1199:13: warning: '_init_solver' used but never defined
+ast/init_solver.h:3:13: warning: '_init_solver' defined but not used [-Wunused-function]
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205422: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205422: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205422: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205422: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205422: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205422: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205422: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205422: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205422: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205422: No such file or directory
+srun: error: atl1-1-02-020-27-2: tasks 0-9: Exited with exit code 2
+rm: cannot remove ‘droplet_impact_205422’: No such file or directory
+---------------------------------------
+Begin Slurm Epilog: Sep-13-2024 15:42:53
+Job ID:        1279655
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      BursynskiValidation
+Resources:     cpu=10,mem=160G,node=1
+Rsrc Used:     cput=00:00:40,vmem=16K,walltime=00:00:04,mem=0,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-02-020-27-2
+---------------------------------------

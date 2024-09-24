@@ -1,0 +1,42 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-13-2024 16:06:04
+Job ID:    1279902
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  BursynskiValidation
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+droplet_impact.c: In function 'log_status':
+droplet_impact.c:147:21: warning: '%g' directive writing between 1 and 13 bytes into a region of size between 0 and 16 [-Wformat-overflow=]
+droplet_impact.c:147:21: note: assuming directive output of 12 bytes
+droplet_impact.c:147:5: note: 'sprintf' output between 7 and 41 bytes into a destination of size 20
+droplet_impact.c: In function 'movie_top':
+droplet_impact.c:229:28: warning: '%g' directive writing between 1 and 13 bytes into a region of size between 10 and 130 [-Wformat-overflow=]
+droplet_impact.c:229:28: note: assuming directive output of 12 bytes
+droplet_impact.c:229:5: note: 'sprintf' output 20 or more bytes (assuming 151) into a destination of size 140
+droplet_impact.c: In function 'movie_front':
+droplet_impact.c:205:28: warning: '%g' directive writing between 1 and 13 bytes into a region of size between 10 and 130 [-Wformat-overflow=]
+droplet_impact.c:205:28: note: assuming directive output of 12 bytes
+droplet_impact.c:205:5: note: 'sprintf' output 22 or more bytes (assuming 153) into a destination of size 140
+ast/interpreter/overload.h:535: error: the dimensional constraints below are not compatible
+ast/interpreter/overload.h:535: 't == DT'
+	└─ [/src/run.h:16: 't = 0.'] = [0,1]
+/src/navier-stokes/centered.h:180: 'u.x[] == Delta/t'
+	└─ [/src/run.h:16: 't = 0.'] = [0]
+slurmstepd: error: *** STEP 1279902.0 ON atl1-1-01-006-14-2 CANCELLED AT 2024-09-13T16:07:23 ***
+slurmstepd: error: *** JOB 1279902 ON atl1-1-01-006-14-2 CANCELLED AT 2024-09-13T16:07:23 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+---------------------------------------
+Begin Slurm Epilog: Sep-13-2024 16:07:25
+Job ID:        1279902
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      BursynskiValidation
+Resources:     cpu=10,mem=160G,node=1
+Rsrc Used:     cput=00:13:10,vmem=144604K,walltime=00:01:19,mem=126472K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-01-006-14-2
+---------------------------------------

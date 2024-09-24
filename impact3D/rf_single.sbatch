@@ -1,10 +1,10 @@
 #!/bin/bash
 
-#SBATCH -JBursynskiValidation
+#SBATCH -JBursynskiValidationConservingWithExtendedTimeHigherRes
 #SBATCH --account=gts-ssuresh313
 #SBATCH -N1 --ntasks-per-node=10
 #SBATCH --mem-per-cpu=16GB
-#SBATCH -t360
+#SBATCH -t1000
 #SBATCH -qinferno
 #SBATCH -oReport-%j.out
 #SBATCH --mail-type=BEGIN,END,FAIL
@@ -17,6 +17,6 @@ numtasks=10
 C99='mpicc -std99' /storage/home/hcoda1/8/wdunlop3/basilisk/src/qcc -Wall -O2 -grid=octree -D_MPI=$numtasks droplet_impact.c -o droplet_impact_${uptime_seconds} -L/storage/home/hcoda1/8/wdunlop3/basilisk/src/gl -lglutils -lfb_tiny -lm -L/usr/local/pace-apps/manual/packages/mvapich/2.3.6-ouywal -lmpi
 
 
-srun --ntasks=$numtasks ./droplet_impact_${uptime_seconds} 3.70e-3 20.4 9
+srun --ntasks=$numtasks ./droplet_impact_${uptime_seconds} 3.70e-3 10.0 9
 
 rm droplet_impact_${uptime_seconds}

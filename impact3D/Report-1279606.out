@@ -1,0 +1,146 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-13-2024 15:37:46
+Job ID:    1279606
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  BursynskiValidation
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+droplet_impact.c:268: warning: Basilisk C parse error near `(!(f[] == 0)) & (!(f[] == 1)){
+            printf("%g %g %g \n", x, y, z'
+droplet_impact.c: In function 'update_contact_angle':
+droplet_impact.c:267:18: error: expected expression before ']' token
+droplet_impact.c:267:34: error: expected expression before ']' token
+droplet_impact.c:267:42: error: expected ')' before '{' token
+ast/init_solver.h:32:1: error: expected expression before '}' token
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/grid/stencils.h:53:15: warning: unused variable '_loop' [-Wunused-variable]
+droplet_impact.c:266:5: note: in expansion of macro 'foreach_stencil'
+ast/init_solver.h:32:1: error: expected declaration or statement at end of input
+ast/init_solver.h:32:1: error: expected declaration or statement at end of input
+ast/init_solver.h:32:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ast/init_solver.h: At top level:
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/common.h:1199:13: warning: '_init_solver' used but never defined
+droplet_impact.c:239:18: warning: 'update_contact_angle' defined but not used [-Wunused-function]
+droplet_impact.c:239:12: warning: 'update_contact_angle_expr0' defined but not used [-Wunused-function]
+droplet_impact.c:233:18: warning: 'adapt_0' defined but not used [-Wunused-function]
+droplet_impact.c:233:12: warning: 'adapt_0_expr0' defined but not used [-Wunused-function]
+droplet_impact.c:209:18: warning: 'movie_top' defined but not used [-Wunused-function]
+droplet_impact.c:209:12: warning: 'movie_top_expr0' defined but not used [-Wunused-function]
+droplet_impact.c:182:18: warning: 'movie_front' defined but not used [-Wunused-function]
+droplet_impact.c:182:12: warning: 'movie_front_expr0' defined but not used [-Wunused-function]
+droplet_impact.c:154:18: warning: 'end' defined but not used [-Wunused-function]
+droplet_impact.c:154:12: warning: 'end_expr0' defined but not used [-Wunused-function]
+droplet_impact.c:142:18: warning: 'log_status' defined but not used [-Wunused-function]
+droplet_impact.c:142:12: warning: 'log_status_expr0' defined but not used [-Wunused-function]
+droplet_impact.c:121:18: warning: 'init_1' defined but not used [-Wunused-function]
+droplet_impact.c:121:12: warning: 'init_1_expr0' defined but not used [-Wunused-function]
+droplet_impact.c:52:15: warning: '_boundary11' defined but not used [-Wunused-function]
+droplet_impact.c:51:472: warning: '_boundary10_homogeneous' defined but not used [-Wunused-function]
+droplet_impact.c:51:15: warning: '_boundary10' defined but not used [-Wunused-function]
+droplet_impact.c:50:471: warning: '_boundary9_homogeneous' defined but not used [-Wunused-function]
+droplet_impact.c:50:15: warning: '_boundary9' defined but not used [-Wunused-function]
+droplet_impact.c:49:471: warning: '_boundary8_homogeneous' defined but not used [-Wunused-function]
+droplet_impact.c:49:15: warning: '_boundary8' defined but not used [-Wunused-function]
+droplet_impact.c:46:15: warning: '_boundary7' defined but not used [-Wunused-function]
+droplet_impact.c:45:15: warning: '_boundary6' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/reduced.h:36:18: warning: 'acceleration_2' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/reduced.h:36:12: warning: 'acceleration_2_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/tension.h:72:18: warning: 'acceleration_1' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/tension.h:72:12: warning: 'acceleration_1_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/tension.h:36:18: warning: 'stability_1' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/tension.h:36:12: warning: 'stability_1_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/iforce.h:45:18: warning: 'acceleration_0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/iforce.h:45:12: warning: 'acceleration_0_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/iforce.h:30:18: warning: 'defaults_4' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/iforce.h:30:12: warning: 'defaults_4_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/contact.h:53:18: warning: 'vof_1' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/contact.h:53:12: warning: 'vof_1_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/contact.h:47:18: warning: 'init_0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/contact.h:47:12: warning: 'init_0_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/two-phase-generic.h:83:18: warning: 'properties_0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/two-phase-generic.h:83:12: warning: 'properties_0_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/two-phase-generic.h:50:18: warning: 'tracer_advection_0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/two-phase-generic.h:50:12: warning: 'tracer_advection_0_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/two-phase-generic.h:10:18: warning: 'defaults_3' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/two-phase-generic.h:10:12: warning: 'defaults_3_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/vof.h:380:18: warning: 'vof_0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/vof.h:380:12: warning: 'vof_0_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/vof.h:140:18: warning: 'stability_0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/vof.h:140:12: warning: 'stability_0_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/vof.h:127:18: warning: 'defaults_2' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/vof.h:127:12: warning: 'defaults_2_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/vof.h:107:18: warning: 'defaults_1' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/vof.h:107:12: warning: 'defaults_1_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:446:18: warning: 'adapt' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:446:12: warning: 'adapt_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:436:12: warning: 'end_timestep' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:436:12: warning: 'end_timestep_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:421:18: warning: 'projection' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:421:12: warning: 'projection_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:381:18: warning: 'acceleration' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:381:12: warning: 'acceleration_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:345:18: warning: 'viscous_term' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:345:12: warning: 'viscous_term_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:316:18: warning: 'advection_term' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:316:12: warning: 'advection_term_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:243:12: warning: 'properties' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:243:12: warning: 'properties_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:236:12: warning: 'tracer_diffusion' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:236:12: warning: 'tracer_diffusion_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:235:12: warning: 'tracer_advection' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:235:12: warning: 'tracer_advection_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:234:12: warning: 'vof' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:234:12: warning: 'vof_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:224:18: warning: 'stability' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:224:12: warning: 'stability_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:222:18: warning: 'set_dtmax' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:222:12: warning: 'set_dtmax_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:196:18: warning: 'init' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:196:12: warning: 'init_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:187:18: warning: 'default_display' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:187:12: warning: 'default_display_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:126:18: warning: 'defaults_0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:126:12: warning: 'defaults_0_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:106: warning: '_boundary5_homogeneous' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:106:15: warning: '_boundary5' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:105: warning: '_boundary4_homogeneous' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:105:15: warning: '_boundary4' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:102: warning: '_boundary3_homogeneous' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:102:15: warning: '_boundary3' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:101: warning: '_boundary2_homogeneous' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:101:15: warning: '_boundary2' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:92: warning: '_boundary1_homogeneous' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:92:15: warning: '_boundary1' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:91: warning: '_boundary0_homogeneous' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/centered.h:91:15: warning: '_boundary0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/run.h:50:18: warning: 'cleanup' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/run.h:50:12: warning: 'cleanup_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/run.h:42:18: warning: 'defaults' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/run.h:42:12: warning: 'defaults_expr0' defined but not used [-Wunused-function]
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/common.h:834:13: warning: 'set_fpe' defined but not used [-Wunused-function]
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205119: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205119: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205119: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205119: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205119: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205119: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205119: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205119: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205119: No such file or directory
+slurmstepd: error: execve(): /storage/home/hcoda1/8/wdunlop3/high_speed_droplet_impact4/droplet_impact_high_speed/impact3D/./droplet_impact_205119: No such file or directory
+srun: error: atl1-1-02-020-27-2: tasks 0-9: Exited with exit code 2
+rm: cannot remove ‘droplet_impact_205119’: No such file or directory
+---------------------------------------
+Begin Slurm Epilog: Sep-13-2024 15:37:57
+Job ID:        1279606
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      BursynskiValidation
+Resources:     cpu=10,mem=160G,node=1
+Rsrc Used:     cput=00:01:50,vmem=4776K,walltime=00:00:11,mem=0,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-02-020-27-2
+---------------------------------------

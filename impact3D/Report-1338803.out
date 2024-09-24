@@ -1,0 +1,260 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-19-2024 14:18:49
+Job ID:    1338803
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  BursynskiValidation
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+ast/interpreter/overload.h:535: error: the dimensional constraints below are not compatible
+ast/interpreter/overload.h:535: 't == DT'
+	└─ [/src/run.h:16: 't = 0.'] = [0,1]
+/src/navier-stokes/centered.h:180: 'u.x[] == Delta/t'
+	└─ [/src/run.h:16: 't = 0.'] = [0]
+Re: 2151, We:30
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2151, We:30
+1
+Re: 2151, We:30
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2151, We:30
+1
+Re: 2151, We:30
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2151, We:30
+1
+Re: 2151, We:30
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2151, We:30
+1
+Re: 2151, We:30
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2151, We:30
+1
+Re: 2151, We:30
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2151, We:30
+1
+Re: 2151, We:30
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2151, We:30
+1
+Re: 2151, We:30
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2151, We:30
+1
+Re: 2151, We:30
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2151, We:30
+1
+Re: 2151, We:30
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Re: 2151, We:30
+1
+
+# Octree, 20 steps, 99.11 CPU, 100.5 real, 4.98e+04 points.step/s, 41 var
+# 10 procs, MPI: min 14 (14%) avg 44 (44%) max 65 (65%)
+---------------------------------------
+Begin Slurm Epilog: Sep-19-2024 14:20:56
+Job ID:        1338803
+Array Job ID:  _4294967294
+User ID:       wdunlop3
+Account:       gts-ssuresh313
+Job name:      BursynskiValidation
+Resources:     cpu=10,mem=160G,node=1
+Rsrc Used:     cput=00:21:00,vmem=7.50M,walltime=00:02:06,mem=6700K,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-01-003-29-2
+---------------------------------------
