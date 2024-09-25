@@ -164,7 +164,6 @@ event log_status(i++){
 }
 
 event end(t=t_end){
-    // Print the Reynold's number and Weber number for this test case
     printf("Re: %d, We:%d\n", (int) round(Re), (int) round(We));
     char donestr[20];
     sprintf(donestr, "Re:%d, We:%d\n", (int) round(Re), (int) round(We));
@@ -192,7 +191,7 @@ event initial_graphics_display(i=0){
 #endif
 
 event movie_front(i+=5){
-    view(tx=0, ty=-0.5, width=1100, height=1100, theta=pi);
+    view(tx=0, ty=-0.5, tz=-0.5, width=1100, height=1100, theta=pi);
   
     clear();
     draw_vof("f");

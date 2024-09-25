@@ -1,0 +1,14 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-25-2024 16:50:00
+Job ID:    1451418
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  BursynskiValidationConservingWithExtendedTimeHigherRes
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+/storage/home/hcoda1/8/wdunlop3/basilisk/src/navier-stokes/conserving.h:28: error: the dimensional constraints below are not compatible
+/src/navier-stokes/conserving.h:28: 'rhou += _const_cm*(clamp(f[],0.,1.)*(rho1 - rho2) + rho2)*u[]'
+	└─  + [/src/navier-stokes/conserving.h:26: 'rhou = 0.'] + [/src/tension.h:43: 'amax = -1e30'] = [0]
+/src/vof.h:284: 'c[] += dt*(flux[] - flux[0,1] + cc[]*(uf.y[0,1] - uf.y[]))/(_const_cm*Delta)'
+	└─ [0,-1] - [/src/navier-stokes/conserving.h:26: 'rhou = 0.'] - [/src/tension.h:43: 'amax = -1e30'] = [0]

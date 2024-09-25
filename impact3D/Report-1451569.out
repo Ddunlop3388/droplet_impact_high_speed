@@ -1,0 +1,14 @@
+---------------------------------------
+Begin Slurm Prolog: Sep-25-2024 17:02:35
+Job ID:    1451569
+User ID:   wdunlop3
+Account:   gts-ssuresh313
+Job name:  BursynskiValidationConservingWithExtendedTimeHigherRes
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+ast/interpreter/overload.h:535: error: the dimensional constraints below are not compatible
+ast/interpreter/overload.h:535: 't == DT'
+	└─ [/src/run.h:16: 't = 0.'] = [0,1]
+ast/interpreter/overload.h:545: 'e->t == t'
+	└─ [/src/run.h:16: 't = 0.'] = [0]
